@@ -7,7 +7,7 @@
 The code in this repo runs [https://restfulcountries.com](https://restfulcountries.com) open source laravel application on nginx using a shell script (launch.sh).
 
 
-The shell script checks for docker and docker-compose installations and installs them if not found.Then creates and runs nginx,mysql php image using docker-compose.  
+The shell script checks for docker and docker-compose installations and installs them if not found.Then creates and runs nginx,mysql and php image using docker-compose.  
 
 The installation of docker and docker-compose via launch.sh is only tested for ubuntu machine, if you are on Windows, ensure to manually install docker toolbox and docker-compose before running the launch script.
 
@@ -43,7 +43,7 @@ You should see nginx-service,mysql-service and php-service all started.
 open [localhost:8088](localhost:8088) in your browser, you should see restfulcountries app running.
 
 ## Todo
-- Add docker and docker-compose installation for windows and other linux distributions to launch.sh
+- Add docker and docker-compose installation for windows and other linux distribution to launch.sh
 
 ## License
 
