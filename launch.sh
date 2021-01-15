@@ -21,6 +21,12 @@ else
     echo "docker-compose installed successfully"
 fi
 
+cd public_html
+
+chmod -R 755 storage
+
+cd ../
+
 docker-compose build && docker-compose up -d
 
 docker-compose exec php php /var/www/html/artisan migrate
